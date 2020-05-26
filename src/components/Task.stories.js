@@ -7,8 +7,16 @@ export default {
     component: Task,
     title: 'Task',
     decorators: [withKnobs],
+    parameters: {
+        assets: [
+            'designs/items.png',
+            'designs/app.png',
+            'designs/list-1.png',
+            'designs/list-2.png',
+        ],
+    },
     excludeStories: /.*Data$/,
-}
+};
 
 export const taskData = {
     id: '1',
